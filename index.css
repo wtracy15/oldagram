@@ -1,7 +1,8 @@
 html, body {
     margin: 0;
     padding: 0;
-    font-family: "Share Tech", sans-serif;
+    max-width: 750px;
+    font-family: "Source Sans 3", sans-serif;
 }
 
 nav {
@@ -9,15 +10,15 @@ nav {
     align-items: center;
     justify-content: space-between;
     padding: 15px;
-    border-bottom: 1px solid gray;
+    border-bottom: 2px solid lightgray;
 }
 
 .logo {
-    width: 200px;
+    width: 250px;
 }
 
 .avatar {
-    width: 80px;
+    width: 70px;
     border-radius: 50%;
 }
 
@@ -25,6 +26,7 @@ nav {
     display: flex;
     padding: 15px 0 15px 20px;
     gap: 10px;
+    align-items: center;
 }
 
 .post-info {
@@ -32,6 +34,7 @@ nav {
     flex-direction: column;
     align-items: left;
     justify-content: center;
+    font-size: 24px;
 }
 
 .post-info p {
@@ -40,8 +43,39 @@ nav {
 
 .post-name {
     font-weight: bold;
+    margin: 0;
 }
 
 .post-img {
     width: 100%;
 }
+
+.interact-bar {
+    display: flex;
+    padding: 30px 0 0 20px;
+    gap: 22px;
+}
+
+.interact-bar img {
+    width: 55px;
+}
+
+.interact-bar img:hover {
+    opacity: 50%;
+}
+
+.like-count {
+    font-weight: bold;
+    font-size: 24px;
+    padding: 0 0 0 25px;
+}
+
+.post-comment {
+    font-size: 24px;
+    padding: 0 0 0 25px;
+}
+
+.post-comment span {
+    font-weight: bold;
+}
+

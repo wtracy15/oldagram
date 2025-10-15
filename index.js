@@ -41,7 +41,7 @@ posts.forEach(post => {
             </div>
             <img class="post-img" src="${post.post}">
             <div class="interact-bar">
-                <img src="images/icon-heart.png">
+                <img id="heart-btn" src="images/icon-heart.png">
                 <img src="images/icon-comment.png">
                 <img src="images/icon-dm.png">
             </div>
