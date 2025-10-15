@@ -1,3 +1,4 @@
+const postsContainer = document.getElementById('posts-container')
 const posts = [
     {
         name: "Vincent van Gogh",
@@ -28,3 +29,24 @@ const posts = [
     }
 ]
 
+posts.forEach(post => {
+    postsContainer.innerHTML += `
+        <div class="post">
+            <div class="post-header">
+                <img class="avatar" src="${post.avatar}">
+                <div class="post-info">
+                    <p class="post-name">${post.name}</p>
+                    <p>${post.location}</p>
+                </div>
+            </div>
+            <img class="post-img" src="${post.post}">
+            <div class="interact-bar">
+                <img src="images/icon-heart.png">
+                <img src="images/icon-comment.png">
+                <img src="images/icon-dm.png">
+            </div>
+            <p class="like-count">${post.likes} likes</p>
+            <p class="post-comment"><span>${post.username}</span> ${post.comment}</p>
+        </div>
+    `
+})
